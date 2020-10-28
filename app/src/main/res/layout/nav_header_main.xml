@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="100dp"
     android:background="@drawable/side_nav_bar"
     android:gravity="bottom"
     android:orientation="vertical"
@@ -29,6 +29,7 @@
         app:layout_constraintLeft_toRightOf="@id/imageView"
         android:paddingLeft="20dp"
         android:text="Add counter"
+        android:textSize="20sp"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

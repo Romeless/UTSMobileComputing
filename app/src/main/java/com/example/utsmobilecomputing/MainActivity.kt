@@ -11,6 +11,7 @@ import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.navigateUp
 import com.example.utsmobilecomputing.ui.home.HomeFragment
+import org.w3c.dom.Text
 
 
 class MainActivity : AppCompatActivity() {
@@ -54,6 +55,8 @@ class MainActivity : AppCompatActivity() {
                         .setCancelable(true)
                         .setPositiveButton("Apply", DialogInterface.OnClickListener { _, _ ->
                             val counter: TextView = findViewById(R.id.textinput_counter)
+                            val toolbar: Toolbar = findViewById(R.id.toolbar)
+                            toolbar.title = view.findViewById<TextView>(R.id.title_edit).text.toString()
                             counter.text = view.findViewById<TextView>(R.id.count_edit).text.toString()
                         })
                         .setNegativeButton("Cancel", DialogInterface.OnClickListener { dialog, _ ->
